@@ -79,7 +79,7 @@ def getURlOfPage(link , arr):
         arr.append(row)
 
 
-        
+
 
 def callingPage(scrap , arr):
     from PyQt5 import QtCore, QtGui, QtWidgets
@@ -88,7 +88,6 @@ def callingPage(scrap , arr):
     from PyQt5.QtGui import QIcon
     from PyQt5.QtCore import pyqtSlot
     import sys
-
     class Ui_Dialog(object):
         global scrap
         def setupUi(self, Dialog):
@@ -134,8 +133,7 @@ def callingPage(scrap , arr):
             n=8400
             self.progressBar.setMinimum(0)
             self.progressBar.setMaximum(n)
-            
-            #self.progressBar.setRange(0,n)
+
             self.progressBar.setGeometry(QtCore.QRect(100, 80, 481, 23))
             self.progressBar.setStyleSheet("color: rgb(0, 0, 0);\n"
     "font: 75 italic 12pt \"Arial\";\n"
@@ -161,19 +159,19 @@ def callingPage(scrap , arr):
     "background-color: rgb(255, 0, 0);")
             self.pushButton_6.setObjectName("pushButton_6")
             self.pushButton_7 = QtWidgets.QPushButton(self.frame_4)
-            self.pushButton_7.setGeometry(QtCore.QRect(150, 440, 111, 23))
+            self.pushButton_7.setGeometry(QtCore.QRect(150, 480, 111, 23))
             self.pushButton_7.setStyleSheet("color: rgb(255, 255, 255);\n"
     "background-color: rgb(255, 0, 0);\n"
     "font: 75 italic 12pt \"Arial\";")
             self.pushButton_7.setObjectName("pushButton_7")
             self.pushButton_8 = QtWidgets.QPushButton(self.frame_4)
-            self.pushButton_8.setGeometry(QtCore.QRect(310, 440, 121, 23))
+            self.pushButton_8.setGeometry(QtCore.QRect(310, 480, 121, 23))
             self.pushButton_8.setStyleSheet("color: rgb(255, 255, 255);\n"
     "background-color: rgb(255, 0, 0);\n"
     "font: 75 italic 12pt \"Arial\";")
             self.pushButton_8.setObjectName("pushButton_8")
             self.pushButton_9 = QtWidgets.QPushButton(self.frame_4)
-            self.pushButton_9.setGeometry(QtCore.QRect(480, 440, 131, 23))
+            self.pushButton_9.setGeometry(QtCore.QRect(500, 480, 131, 23))
             self.pushButton_9.setStyleSheet("color: rgb(255, 255, 255);\n"
     "background-color: rgb(255, 0, 0);\n"
     "font: 75 italic 12pt \"Arial\";")
@@ -198,6 +196,17 @@ def callingPage(scrap , arr):
             self.tableWidget_2.setHorizontalHeaderItem(5, item)
             item = QtWidgets.QTableWidgetItem()
             self.tableWidget_2.setHorizontalHeaderItem(6, item)
+            self.label_17 = QtWidgets.QLabel(self.frame_4)
+            self.label_17.setGeometry(QtCore.QRect(50, 430, 161, 16))
+            self.label_17.setStyleSheet("font: 75 italic 14pt \"Arial\";\n"
+    "color: rgb(255, 255, 255);")
+            self.label_17.setObjectName("label_17")
+            self.label_18 = QtWidgets.QLabel(self.frame_4)
+            self.label_18.setGeometry(QtCore.QRect(230, 430, 151, 21))
+            self.label_18.setStyleSheet("font: 75 italic 14pt \"Arial\";\n"
+    "color: rgb(255, 255, 255);")
+            self.label_18.setText("")
+            self.label_18.setObjectName("label_18")
             self.tabWidget.addTab(self.tab_2, "")
             self.tab_3 = QtWidgets.QWidget()
             self.tab_3.setObjectName("tab_3")
@@ -386,13 +395,13 @@ def callingPage(scrap , arr):
             self.tab_5 = QtWidgets.QWidget()
             self.tab_5.setObjectName("tab_5")
             self.frame_3 = QtWidgets.QFrame(self.tab_5)
-            self.frame_3.setGeometry(QtCore.QRect(0, 0, 741, 541))
+            self.frame_3.setGeometry(QtCore.QRect(10, 0, 741, 541))
             self.frame_3.setStyleSheet("background-color: rgb(8, 143, 143);")
             self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
             self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
             self.frame_3.setObjectName("frame_3")
             self.label_11 = QtWidgets.QLabel(self.frame_3)
-            self.label_11.setGeometry(QtCore.QRect(80, 50, 141, 31))
+            self.label_11.setGeometry(QtCore.QRect(80, 30, 141, 31))
             self.label_11.setStyleSheet("color: rgb(255, 255, 255);\n"
     "font: 75 italic 14pt \"Arial\";")
             self.label_11.setObjectName("label_11")
@@ -413,12 +422,12 @@ def callingPage(scrap , arr):
     "background-color: rgb(255, 0, 0);")
             self.pushButton_3.setObjectName("pushButton_3")
             self.radioButton_5 = QtWidgets.QRadioButton(self.frame_3)
-            self.radioButton_5.setGeometry(QtCore.QRect(280, 50, 121, 31))
+            self.radioButton_5.setGeometry(QtCore.QRect(280, 30, 121, 31))
             self.radioButton_5.setStyleSheet("font: 75 italic 14pt \"Arial\";\n"
     "color: rgb(255, 255, 255);")
             self.radioButton_5.setObjectName("radioButton_5")
             self.radioButton_6 = QtWidgets.QRadioButton(self.frame_3)
-            self.radioButton_6.setGeometry(QtCore.QRect(440, 50, 141, 31))
+            self.radioButton_6.setGeometry(QtCore.QRect(440, 30, 141, 31))
             self.radioButton_6.setStyleSheet("font: 75 italic 14pt \"Arial\";\n"
     "color: rgb(255, 255, 255);")
             self.radioButton_6.setObjectName("radioButton_6")
@@ -455,19 +464,31 @@ def callingPage(scrap , arr):
             self.comboBox_7.addItem("")
             self.comboBox_7.addItem("")
             self.textEdit = QtWidgets.QTextEdit(self.frame_3)
-            self.textEdit.setGeometry(QtCore.QRect(300, 160, 181, 41))
+            self.textEdit.setGeometry(QtCore.QRect(300, 170, 181, 41))
             self.textEdit.setStyleSheet("background-color: rgb(255, 255, 255);\n"
     "color: rgb(8, 143, 143);\n"
     "font: 75 14pt \"Arial\";")
             self.textEdit.setObjectName("textEdit")
+            self.label_16 = QtWidgets.QLabel(self.frame_3)
+            self.label_16.setGeometry(QtCore.QRect(76, 69, 121, 31))
+            self.label_16.setStyleSheet("color: rgb(255, 255, 255);\n"
+    "font: 75 italic 14pt \"Arial\";")
+            self.label_16.setObjectName("label_16")
+            self.comboBox_2 = QtWidgets.QComboBox(self.frame_3)
+            self.comboBox_2.setGeometry(QtCore.QRect(300, 70, 181, 31))
+            self.comboBox_2.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+    "color:rgb(8, 143, 143);\n"
+    "font: 75 14pt \"Arial\";")
+            self.comboBox_2.setObjectName("comboBox_2")
+            self.comboBox_2.addItem("")
+            self.comboBox_2.addItem("")
             self.tabWidget.addTab(self.tab_5, "")
+
             self.retranslateUi(Dialog)
             self.tabWidget.setCurrentIndex(0)
             QtCore.QMetaObject.connectSlotsByName(Dialog)
-            
-            
-            #######################################################
-            
+
+#######################################################
             self.pushButton_11.clicked.connect(self.close)
             self.pushButton_10.clicked.connect(self.returnToMain)
             self.pushButton.clicked.connect(self.AllLinearSort)
@@ -477,31 +498,26 @@ def callingPage(scrap , arr):
             self.pushButton_9.clicked.connect(self.returnTosearch)
             self.pushButton_5.clicked.connect(self.runFunctions)
             self.pushButton_4.clicked.connect(self.pauseFunctions)
-            self.pushButton_6.clicked.connect(self.continueFunctions)
-            
+            # self.pushButton_6.clicked.connect(self.continueFunctions)
+
         def run(self, x):
             for i in range(x):
                 b=x
                 time.sleep(0.1)
                 self.progressBar.setValue(b*400)
-             
-            
-            
-        def runFunctions(self):
+
+        def runFunctions(self,ValueToSet):
             count=0
             for i in range(0,21):
-                self.scrapping(count)
+                # self.scrapping(count)
                 count=count+1
                 self.run(count)
-             
+
         def pauseFunctions(self):
-            self.run(scrapControlNumber)
-            
-            
-        def continueFunctions(self):
-            self.scrapping(RunPauseControl, scrapControlNumber)
-            self.run(scrapControlNumber)
-            
+            if(self.pushButton_6.clicked):
+                print("yes")
+
+        
         def insertIncrease(self,x):
             for i in range(1,len(scrap)):
                 key=int(scrap[i][x])
@@ -560,46 +576,8 @@ def callingPage(scrap , arr):
                 if(flag==0):
                     break
 
-            return push
-
-        def showTable(self,tabledata):
-            for i in range(len(tabledata)):
-                print(tabledata[i])
-            for i in range(len(tabledata)):
-                self.tableWidget_2.setRowCount(len(tabledata))
-                self.tableWidget_2.setColumnCount(7)
-                self.tableWidget_2.setHorizontalHeaderLabels(["Name","Current P","Earlier P","Discount","Ratting","people","properties"])
-                self.tableWidget_2.setItem( i , 0 ,QTableWidgetItem(tabledata[i][0]))
-                self.tableWidget_2.setItem( i , 1 ,QTableWidgetItem(str(tabledata[i][3])))
-                self.tableWidget_2.setItem( i , 2 ,QTableWidgetItem(str(tabledata[i][2])))
-                self.tableWidget_2.setItem( i , 3 ,QTableWidgetItem(str(tabledata[i][4])))
-                self.tableWidget_2.setItem( i , 4 ,QTableWidgetItem(str(tabledata[i][5])))
-                self.tableWidget_2.setItem( i , 5 ,QTableWidgetItem(str(tabledata[i][6])))
-                self.tableWidget_2.setItem( i , 6 ,QTableWidgetItem(str(tabledata[i][1])))
-            self.tabWidget.setCurrentWidget(self.tab_2)
-
-
-        def star(self ,a,b,c):
-            push=[]
-            for i in range(len(scrap)):
-                temporary=[]
-                temporary.append(i)
-                temporary.append(int(scrap[i][a]))
-                push.append(temporary)
-
-            if(b==3):
-                if(c==1):
-                    push=self.bubbleIncrease(push)
-            demo=[]
-            for i in range(len(push)):
-                demo.append(scrap[push[i][0]])
-             
-            self.showTable(demo)
-
-
-
         def AllLinearSort(self):
-            #attribute,scrap
+            #attribute to scrap
             x1=self.comboBox.currentIndex()
             #Alorithm
             x2=self.comboBox_8.currentIndex()
@@ -760,7 +738,6 @@ def callingPage(scrap , arr):
 
             if(x2==1):
                 print("Merge Sort")
-
             if(x2==3):
                 print("Bubble Sort")
                 if(x1==0):
@@ -796,10 +773,27 @@ def callingPage(scrap , arr):
                 print("Hybrid Sort")
             if(x2==9):
                 print("Heap Sort")
-            
-            
             self.returnToMain()
             
+
+
+
+        def showTable(self,tabledata):
+            for i in range(len(tabledata)):
+                print(tabledata[i])
+            for i in range(len(tabledata)):
+                self.tableWidget_2.setRowCount(len(tabledata))
+                self.tableWidget_2.setColumnCount(7)
+                self.tableWidget_2.setHorizontalHeaderLabels(["Name","Current P","Earlier P","Discount","Ratting","people","properties"])
+                self.tableWidget_2.setItem( i , 0 ,QTableWidgetItem(tabledata[i][0]))
+                self.tableWidget_2.setItem( i , 1 ,QTableWidgetItem(str(tabledata[i][3])))
+                self.tableWidget_2.setItem( i , 2 ,QTableWidgetItem(str(tabledata[i][2])))
+                self.tableWidget_2.setItem( i , 3 ,QTableWidgetItem(str(tabledata[i][4])))
+                self.tableWidget_2.setItem( i , 4 ,QTableWidgetItem(str(tabledata[i][5])))
+                self.tableWidget_2.setItem( i , 5 ,QTableWidgetItem(str(tabledata[i][6])))
+                self.tableWidget_2.setItem( i , 6 ,QTableWidgetItem(str(tabledata[i][1])))
+            self.tabWidget.setCurrentWidget(self.tab_2)
+
         def returnTolinear(self):
             self.comboBox.clear()
             self.comboBox.addItem("Name")
@@ -811,6 +805,7 @@ def callingPage(scrap , arr):
             self.comboBox.addItem("Properties")
 
             self.tabWidget.setCurrentWidget(self.tab_3)
+
             
         def returnToMultiple(self):
             self.comboBox_3.clear()
@@ -854,8 +849,6 @@ def callingPage(scrap , arr):
             self.comboBox_7.addItem("Ratting")
             self.comboBox_7.addItem("No. of people")
             self.comboBox_7.addItem("Properties")
-
-
             self.tabWidget.setCurrentWidget(self.tab_5)   
 
 
@@ -878,8 +871,7 @@ def callingPage(scrap , arr):
             ui = Ui_Dialog()
             ui.setupUi(Dialog)
             Dialog.hide()
-            
-               
+
         def scrapping(self, scrapControlNumber):
             if(scrapControlNumber == 0):
                 getURlOfPage("https://www.flipkart.com/mobile-accessories/cases-and-covers/pr?sid=tyy,4mr,q2u&otracker=nmenu_sub_Electronics_0_Mobile%20Cases", arr)
@@ -1308,8 +1300,6 @@ def callingPage(scrap , arr):
                 arr.clear()
                 return 
             
-        
-            
             
         def retranslateUi(self, Dialog):
             _translate = QtCore.QCoreApplication.translate
@@ -1338,6 +1328,7 @@ def callingPage(scrap , arr):
             item.setText(_translate("Dialog", "Ratting"))
             item = self.tableWidget_2.horizontalHeaderItem(6)
             item.setText(_translate("Dialog", "Properties"))
+            self.label_17.setText(_translate("Dialog", "Time Taken"))
             self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("Dialog", "Main page"))
             self.label.setText(_translate("Dialog", "Linear Sorting"))
             self.label_2.setText(_translate("Dialog", "Attribute"))
@@ -1432,11 +1423,14 @@ def callingPage(scrap , arr):
             self.comboBox_7.setItemText(4, _translate("Dialog", "Ratting"))
             self.comboBox_7.setItemText(5, _translate("Dialog", "No. of people"))
             self.comboBox_7.setItemText(6, _translate("Dialog", "Properties"))
+            self.label_16.setText(_translate("Dialog", "Comparison"))
+            self.comboBox_2.setItemText(0, _translate("Dialog", "Greater"))
+            self.comboBox_2.setItemText(1, _translate("Dialog", "Lesser"))
             self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("Dialog", "Searching"))
-    import source1
 
 
     if __name__ == "__main__":
+        import source1
         import sys
         app = QtWidgets.QApplication(sys.argv)
         Dialog = QtWidgets.QDialog()
@@ -1444,8 +1438,6 @@ def callingPage(scrap , arr):
         ui.setupUi(Dialog)
         Dialog.show()
         sys.exit(app.exec_())
-
-        
 ##Main code of this file
 
 

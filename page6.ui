@@ -197,7 +197,7 @@ background-color: rgb(255, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>150</x>
-        <y>440</y>
+        <y>480</y>
         <width>111</width>
         <height>23</height>
        </rect>
@@ -215,7 +215,7 @@ font: 75 italic 12pt &quot;Arial&quot;;</string>
       <property name="geometry">
        <rect>
         <x>310</x>
-        <y>440</y>
+        <y>480</y>
         <width>121</width>
         <height>23</height>
        </rect>
@@ -232,8 +232,8 @@ font: 75 italic 12pt &quot;Arial&quot;;</string>
      <widget class="QPushButton" name="pushButton_9">
       <property name="geometry">
        <rect>
-        <x>480</x>
-        <y>440</y>
+        <x>500</x>
+        <y>480</y>
         <width>131</width>
         <height>23</height>
        </rect>
@@ -294,6 +294,40 @@ font: 75 italic 12pt &quot;Arial&quot;;</string>
         <string>Properties</string>
        </property>
       </column>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>430</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 14pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Time Taken</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>430</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 14pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
      </widget>
     </widget>
    </widget>
@@ -956,7 +990,7 @@ font: 75 14pt &quot;Arial&quot;;</string>
     <widget class="QFrame" name="frame_3">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>10</x>
        <y>0</y>
        <width>741</width>
        <height>541</height>
@@ -975,7 +1009,7 @@ font: 75 14pt &quot;Arial&quot;;</string>
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>50</y>
+        <y>30</y>
         <width>141</width>
         <height>31</height>
        </rect>
@@ -1044,7 +1078,7 @@ background-color: rgb(255, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>280</x>
-        <y>50</y>
+        <y>30</y>
         <width>121</width>
         <height>31</height>
        </rect>
@@ -1061,7 +1095,7 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>440</x>
-        <y>50</y>
+        <y>30</y>
         <width>141</width>
         <height>31</height>
        </rect>
@@ -1173,7 +1207,7 @@ font: 75 14pt &quot;Arial&quot;;</string>
       <property name="geometry">
        <rect>
         <x>300</x>
-        <y>160</y>
+        <y>170</y>
         <width>181</width>
         <height>41</height>
        </rect>
@@ -1183,6 +1217,48 @@ font: 75 14pt &quot;Arial&quot;;</string>
 color: rgb(8, 143, 143);
 font: 75 14pt &quot;Arial&quot;;</string>
       </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>76</x>
+        <y>69</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;Arial&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Comparison</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>70</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color:rgb(8, 143, 143);
+font: 75 14pt &quot;Arial&quot;;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Greater</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lesser</string>
+       </property>
+      </item>
      </widget>
     </widget>
    </widget>
